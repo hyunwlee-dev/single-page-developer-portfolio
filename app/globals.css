@@ -1,3 +1,5 @@
+@import '@/app/theme.css';
+
 *,
 *::before, 
 *::after {
@@ -8,7 +10,10 @@
 
 html,
 body {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: var(--line-height-md);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 a {
@@ -18,4 +23,21 @@ a {
 
 li {
   list-style: none;
+}
+
+h1 {
+  font-size: var(--font-xxxl);
+  line-height: var(--line-height-xxxl);
+  letter-spacing: var(--letter-spacing-xxxl);
+}
+
+h2 {
+  font-size: var(--font-xxl);
+  line-height: var(--line-height-xxl);
+  letter-spacing: var(--letter-spacing-xxl);
+}
+
+h3 {
+  font-size: var(--font-xl);
+  line-height: var(--line-height-xl);
 }
