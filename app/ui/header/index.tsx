@@ -10,7 +10,9 @@ export default function Header({ ...props }) {
       {...props}
     >
       <Logo />
-      <SocialList>
+      <SocialList
+       className={styles.list} 
+      >
         <SocialList.Item icon={'github'} />
         <SocialList.Item icon={'frontend-mentor'} />
         <SocialList.Item icon={'linkedin'} />

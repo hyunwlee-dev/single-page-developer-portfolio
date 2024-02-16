@@ -1,0 +1,14 @@
+.button {
+  font-weight: var(--weight-bold);
+  font-size: 16px;
+  line-height: 1.444rem;
+  letter-spacing: 0.127rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  border-bottom: 2px solid var(--color-neon);
+  padding-bottom: 0.556rem;
+}
+
+.button:hover {
+  color: #4EE1A0;
+}

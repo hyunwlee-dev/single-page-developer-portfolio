@@ -1,6 +1,32 @@
 .header {
-  margin: 2.167rem auto 0;
+  padding: 2.167rem 0 3rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  position: relative;
+}
+
+.header::before {
+  position: absolute;
+  content: '';
+  width: 129px;
+  height: 129px;
+  top: 521px;
+  right: 380px;
+  z-index: 10;
+  background: url("/images/pattern-circle.svg") no-repeat center / 100% 100%;
+}
+
+.header::after {
+  position: absolute;
+  content: '';
+  width: 445px;
+  height: 720px;
+  top: 0;
+  right: 0;
+  background: url("/images/image-profile-desktop.webp") no-repeat center / 100% 100%;
+}
+
+.list {
+  padding-right: 1.778rem;
 }

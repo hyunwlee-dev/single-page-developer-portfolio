@@ -1,0 +1,27 @@
+.heading2 {
+  font-size: var(--font-xxxl);
+  line-height: var(--line-height-xxxl);
+  letter-spacing: var(--letter-spacing-xxxl);
+  white-space: pre-line;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: 90%;
+  left: 0;
+  border-bottom: 6px solid var(--color-neon);
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.sub {
+  margin: 2.5rem 0 3.611rem;
+}
