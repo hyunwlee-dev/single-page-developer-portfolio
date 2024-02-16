@@ -1,0 +1,6 @@
+.header {
+  margin: 2.167rem auto 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
