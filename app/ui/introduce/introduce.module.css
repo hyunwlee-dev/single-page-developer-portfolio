@@ -25,3 +25,27 @@
 .sub {
   margin: 2.5rem 0 3.611rem;
 }
+
+.skillful {
+  margin: 12.222rem 0;
+  border-top: 1px solid var(--color-white);
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 3.222rem;
+  width: 33%;
+}
+
+.skill {
+  font-size: var(--font-xxl);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-height-xxl);
+  letter-spacing: var(--letter-spacing-xxl);
+  margin-bottom: 0.778rem;
+}
