@@ -5,16 +5,6 @@
   position: relative;
 }
 
-.main::after {
-  position: absolute;
-  content: '';
-  width: 530px;
-  height: 129px;
-  top: -70px;
-  left: -100px;
-  background: url("/images/pattern-rings.svg") no-repeat center / 100% 100%;
-}
-
 .font-medium {
   font-weight: 400;
 }

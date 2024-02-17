@@ -15,6 +15,27 @@ body {
   line-height: var(--line-height-md);
   background-color: var(--color-black);
   color: var(--color-white);
+  overflow-x: hidden;
+}
+
+body::before {
+  position: absolute;
+  content: '';
+  width: 530px;
+  height: 129px;
+  top: 133px;
+  left: -100px;
+  background: url("/images/pattern-rings.svg") no-repeat center / 100% 100%;
+}
+
+body::after {
+  position: absolute;
+  content: '';
+  width: 530px;
+  height: 129px;
+  top: 1080px;
+  right: -250px;
+  background: url("/images/pattern-rings.svg") no-repeat center / 100% 100%;
 }
 
 a {
