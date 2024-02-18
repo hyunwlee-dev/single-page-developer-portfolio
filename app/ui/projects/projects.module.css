@@ -1,0 +1,66 @@
+.top {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.xxxl {
+  font-size: var(--font-xxxl);
+}
+
+.card {
+  margin: 4.444rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 3.833rem;
+}
+
+.item:hover .opacity-wrapper {
+  transition: 0.5s;
+  opacity: 0.3;
+}
+
+.button-project, .button-code {
+  opacity: 1;
+  display: none;
+  padding: 0 0 0.556rem;
+}
+
+.item:hover .button-project {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item:hover .button-code {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  padding: 0.5rem 0;
+}
+
+.skills {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.skill {
+  color: var(--color-light-gray);
+}
