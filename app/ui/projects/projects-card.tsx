@@ -22,7 +22,7 @@ function Item({ image, title, skills, links }: ExperienceType) {
       </div>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.skills}>
-        {skills.map(skill => <span className={styles.skill}>{skill}</span>)}
+        {skills.map(skill => <span key={title} className={styles.skill}>{skill}</span>)}
       </div>
       <Button onClick={links.project} className={styles['button-project']}>View Project</Button>
       <Button onClick={links.code} className={styles['button-code']}>View Code</Button>

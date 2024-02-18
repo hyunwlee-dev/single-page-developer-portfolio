@@ -6,7 +6,13 @@ import { ExperienceType } from '@/app/definitions';
 import styles from './projects.module.css';
 import { useRouter } from 'next/navigation';
 
-export default function Projects({ experiences }: { experiences: ExperienceType[] }) {
+interface IProps extends Omit<ExperienceType, "links"> {
+  links: {
+    project: string, code: string
+  }
+}
+
+export default function Projects({ experiences }: { experiences: IProps[] }) {
   const router = useRouter();
   return (
     <>
