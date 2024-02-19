@@ -1,0 +1,24 @@
+.textarea-wrapper {
+}
+
+.textarea {
+  width: 100%;
+  min-height: 107px;
+  background: transparent;
+  color: var(--color-white);
+  border: none;
+  resize: none;
+  padding: 0 1.333rem 0.944rem;
+  border-bottom: 1px solid var(--color-white);
+  line-height: var(--line-height-md);
+  letter-spacing: -0.012rem;
+}
+
+.textarea-wrapper .error {
+ color: var(--color-red);
+}
+
+.errorMessage {
+  text-align: end;
+  color: var(--color-red);
+}
