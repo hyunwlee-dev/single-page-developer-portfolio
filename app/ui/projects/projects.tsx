@@ -24,7 +24,7 @@ export default function Projects({ experiences }: { experiences: IProps[] }) {
         {experiences.map(
           ({ image, title, skills, links }) =>
             <ProjectsCard.Item
-              key={title}
+              key={`project-${title}`}
               image={image}
               title={title}
               skills={skills}

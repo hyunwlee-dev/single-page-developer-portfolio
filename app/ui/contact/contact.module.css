@@ -1,0 +1,58 @@
+.footer {
+  background: var(--color-dark-gray);
+  padding: 3rem;
+}
+
+.contact-wrapper {
+}
+
+.heading2 {
+  float: left;
+  font-size: var(--font-xxxl);
+  line-height: var(--line-height-xxxl);
+  letter-spacing: var(--letter-spacing-xxxl);
+  margin-bottom: 2rem;
+}
+
+.p {
+  color: var(--color-light-gray);
+  float: left;
+  width: 50%;
+  white-space: pre-wrap;
+}
+
+.contact-form {
+  float: right;
+  display: inline-block;
+  width: 50%;
+  width: 24.722rem;
+}
+
+.hr {
+  clear: both;
+  margin: 3rem 0;
+}
+
+.bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.author {
+  font-size: var(--font-xl);
+  display: inline-block;
+  font-size: 1.778rem;
+  line-height: 1.778rem;
+  letter-spacing: -0.024rem;
+
+}
+
+.input, .textarea {
+  margin-bottom: 1rem;
+}
+
+.button {
+  float: right;
+  margin: 0.778rem 0 5.111rem;
+}
