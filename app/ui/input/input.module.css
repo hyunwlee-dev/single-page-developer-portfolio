@@ -1,0 +1,21 @@
+.input-wrapper {
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  color: var(--color-white);
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  padding: 0 1.333rem 0.944rem;
+}
+
+.inputWrapper .error {
+ color: var(--color-red);
+}
+
+.errorMessage {
+  text-align: end;
+  margin-top: 0.222rem;
+  color: var(--color-red);
+}
