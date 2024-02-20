@@ -16,3 +16,11 @@
   flex-flow: row nowrap;
   align-items: center;
 }
+
+.link > svg path {
+  transition: fill 0.3s;
+}
+
+.link:hover > svg path {
+  fill: var(--color-neon);
+}
