@@ -1,6 +1,6 @@
-import Button from '@/app/ui/button';
 import styles from './introduce.module.css';
 import clsx from 'clsx';
+import ContactButton from '@/app/ui/contact-button';
 
 export default function Introduce() {
   return (
@@ -12,7 +12,7 @@ export default function Introduce() {
       <p className={clsx(styles['pre-wrap'], styles.sub)}>
         {`Based in the UK, I’m a front-end developer\npassionate about building accessible web apps\nthat users love.`}
       </p>
-      <Button>Contact me</Button>
+      <ContactButton>Contact me</ContactButton>
     </>
   );
 } 

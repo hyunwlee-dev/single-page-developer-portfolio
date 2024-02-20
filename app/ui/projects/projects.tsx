@@ -1,10 +1,10 @@
 'use client';
 
-import Button from '@/app/ui/button';
 import { ProjectsCard } from '@/app/ui/projects';
 import { ExperienceType } from '@/app/definitions';
 import styles from './projects.module.css';
 import { useRouter } from 'next/navigation';
+import ContactButton from '@/app/ui/contact-button';
 
 interface IProps extends Omit<ExperienceType, "links"> {
   links: {
@@ -18,7 +18,7 @@ export default function Projects({ experiences }: { experiences: IProps[] }) {
     <>
       <div className={styles.top}>
         <h2 className={styles.xxxl}>Projects</h2>
-        <Button>Contact me</Button>
+        <ContactButton>contact me</ContactButton>
       </div>
       <ProjectsCard>
         {experiences.map(
