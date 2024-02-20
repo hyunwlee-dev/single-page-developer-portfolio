@@ -1,6 +1,6 @@
 .footer {
   background: var(--color-dark-gray);
-  padding: 3rem;
+  padding: 3rem 0;
   position: relative;
 }
 
