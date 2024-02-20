@@ -1,6 +1,17 @@
 .footer {
   background: var(--color-dark-gray);
   padding: 3rem;
+  position: relative;
+}
+
+.footer::before {
+  position: absolute;
+  content: '';
+  width: 530px;
+  height: 129px;
+  top: 290px;
+  left: -100px;
+  background: url("/images/pattern-rings.svg") no-repeat center / 100% 100%;
 }
 
 .contact-wrapper {
