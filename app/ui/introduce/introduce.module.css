@@ -2,20 +2,15 @@
   font-size: var(--font-xxxl);
   line-height: var(--line-height-xxxl);
   letter-spacing: var(--letter-spacing-xxxl);
-  white-space: pre-line;
+  white-space: pre-wrap;
+  margin-top: 4rem;
 }
 
 .underline {
   position: relative;
-}
-
-.underline::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  top: 90%;
-  left: 0;
-  border-bottom: 6px solid var(--color-neon);
+  text-decoration: underline;
+  text-decoration-color: var(--color-neon);
+  text-underline-offset: 1rem;
 }
 
 .pre-wrap {
@@ -49,4 +44,39 @@
   line-height: var(--line-height-xxl);
   letter-spacing: var(--letter-spacing-xxl);
   margin-bottom: 0.778rem;
+}
+ 
+@media only screen and (max-width: 1100px) {
+  .heading2 {
+    width: 75%;
+  }
+  .sub {
+    margin: 4.5rem 0 2.5rem;
+  }
+  .skillful {
+    margin: 3.333rem 0 5.556rem;
+  }
+  .item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading2 {
+    font-size: var(--font-xxl);
+    line-height: var(--line-height-xxl);
+    letter-spacing: var(--letter-spacing-xxl);
+    margin-top: 18rem;
+    text-align: center;
+  }
+  .pre-wrap {
+    text-align: center;
+  }
+  .sub {
+    margin: 2rem 0 1.5rem;
+  }
+  .item {
+    align-items: center;
+    width: 100%;
+  }
 }

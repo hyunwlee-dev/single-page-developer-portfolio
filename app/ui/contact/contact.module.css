@@ -1,20 +1,20 @@
 .footer {
   background: var(--color-dark-gray);
-  padding: 3rem 0;
+  padding: 3rem 0 5.111rem;
+}
+
+.contact-wrapper {
   position: relative;
 }
 
-.footer::before {
+.contact-wrapper::before {
   position: absolute;
   content: '';
   width: 530px;
   height: 129px;
-  top: 290px;
-  left: -100px;
+  top: 235px;
+  left: -240px;
   background: url("/images/pattern-rings.svg") no-repeat center / 100% 100%;
-}
-
-.contact-wrapper {
 }
 
 .heading2 {
@@ -26,10 +26,10 @@
 }
 
 .p {
+  position: absolute;
   color: var(--color-light-gray);
-  float: left;
-  width: 50%;
   white-space: pre-wrap;
+  top: 6.5rem;
 }
 
 .contact-form {
@@ -66,4 +66,43 @@
 .button {
   float: right;
   margin: 0.778rem 0 5.111rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+   }
+   .p {
+     text-align: center;
+   }
+   .contact-form {
+     margin-top: 7rem;
+   }
+   .button {
+     margin: 0 0 4rem;
+   }
+   .contact-wrapper::before {
+     top: 505px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+  .bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .heading2 {
+    font-size: var(--font-xxl);
+  }
+  .contact-form {
+    margin-top: 11rem;
+    width: 90%;
+  }
+  .list {
+    margin-top: 1.5rem;
+  }
 }

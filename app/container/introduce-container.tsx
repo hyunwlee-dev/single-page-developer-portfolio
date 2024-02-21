@@ -1,10 +1,12 @@
 import Container from "@/app/ui/container";
 import { Introduce, SkillfulCard } from "@/app/ui/introduce";
 import A11yHidden from "@/app/ui/a11y-hidden";
+import styles from "@/app/ui/container/container.module.css";
 
 export default function IntroduceContainer() {
   return (
     <Container
+      className={styles["introduce-container"]}
       as={'section'}
     >
       <A11yHidden as='h2'>introduce</A11yHidden>

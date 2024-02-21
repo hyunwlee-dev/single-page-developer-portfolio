@@ -23,14 +23,19 @@ export default function Contact({
         className={styles['contact-wrapper']}
       >
         <h2 className={styles.heading2}>Contact</h2>
+        <p className={styles.p}>
+          {`I would love to hear about your project and how I\ncould help. Please fill in the form, and I’ll get back\nto you as soon as possible.`}
+        </p>
         <ContactForm
           register={register}
           errors={errors}
           {...props}
         />
-        <p className={styles.p}>
-          {`I would love to hear about your project and how I\ncould help. Please fill in the form, and I’ll get back\nto you as soon as possible.`}
-        </p>
+      </Container>
+      <Container
+        as='section'
+        className={styles['social-link-wrapper']}
+      >
         <hr className={styles.hr} />
         <div className={styles.bottom}>
           <span className={styles.author}>adamkeys</span>

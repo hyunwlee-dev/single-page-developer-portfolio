@@ -17,7 +17,7 @@ export default function Projects({ experiences }: { experiences: IProps[] }) {
   return (
     <>
       <div className={styles.top}>
-        <h2 className={styles.xxxl}>Projects</h2>
+        <h2 className={styles.heading2}>Projects</h2>
         <ContactButton>contact me</ContactButton>
       </div>
       <ProjectsCard>

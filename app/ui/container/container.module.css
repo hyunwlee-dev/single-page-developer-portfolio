@@ -1,5 +1,51 @@
 .container {
   margin: 0 auto;
   max-width: var(--container-width);
-  min-width: var(--container-width);
+}
+
+.introduce-container {
+  position: relative;
+}
+
+.introduce-container::before {
+  position: absolute;
+  content: '';
+  width: 530px;
+  height: 129px;
+  top: -68px;
+  left: -240px;
+  background: url("/images/pattern-rings.svg") no-repeat center / 100% 100%;
+}
+
+.introduce-container::after {
+  position: absolute;
+  content: '';
+  width: 530px;
+  height: 129px;
+  top: 865px;
+  right: -290px;
+  background: url("/images/pattern-rings.svg") no-repeat center / 100% 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding: 0 1.667rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 1.667rem;
+  }
+  .introduce-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .introduce-container::before {
+    top: 40px;
+  }
+  .introduce-container::after {
+    top: 1600px;
+  }
 }

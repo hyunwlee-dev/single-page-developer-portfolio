@@ -9,9 +9,11 @@ export default function Header({ ...props }) {
       className={styles.header}
       {...props}
     >
-      <Logo />
+      <Logo
+        className={styles.logo}
+      />
       <SocialList
-       className={styles.list} 
+        className={styles.list}
       >
         <SocialList.Item icon={'github'} />
         <SocialList.Item icon={'frontend-mentor'} />
